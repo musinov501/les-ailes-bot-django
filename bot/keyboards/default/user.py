@@ -38,8 +38,6 @@ async def get_user_main_menu():
     )
     return keyboard
 
-
-
 async def get_cities_keyboard():
     cities = await get_all_cities()
     keyboards = ReplyKeyboardBuilder()

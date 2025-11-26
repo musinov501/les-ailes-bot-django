@@ -8,6 +8,7 @@ from bot.apps import BotConfig
 from bot.models.base import City
 from bot.models.product import Product, Category
 from core import config
+from bot.models.branch import Branch
 
 
 @admin.register(Product)
@@ -138,6 +139,13 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 @admin.register(City)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'created_at']
+    list_filter = ['created_at']
+    search_fields = ['name']
+    
+    
+@admin.register(Branch)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'created_at']
     list_filter = ['created_at']
