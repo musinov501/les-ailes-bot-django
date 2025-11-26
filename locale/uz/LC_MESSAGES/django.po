@@ -26,6 +26,14 @@ msgstr "Asosiy menyuga xush kelibsiz 😊"
 msgid "✅ Language changed successfully!"
 msgstr "✅ Til muvaffaqiyatli o‘zgartirildi!"
 
+#: .\bot\handlers\order.py:13
+msgid "Pick up the order yourself 🙋‍♂️ or choose delivery 🚙."
+msgstr "Buyurtmani o'zingiz 🙋‍♂️ olib keting yoki Yetkazib berishni 🚙 tanlang"
+
+#: .\bot\handlers\start.py:39
+msgid "Iltimos, shaharni tanlang:"
+msgstr "Iltimos, shaharni tanlang:"
+
 #: .\bot\handlers\start.py:64
 msgid "🎉 Great! Now you can use the bot in your preferred language.\n\nUse /help to see available commands."
 msgstr "🎉 Ajoyib! Endi siz botni o‘zingiz xohlagan tilingizda ishlatishingiz mumkin.\n\nMavjud buyruqlarni ko‘rish uchun /help ni ishlating."
@@ -37,6 +45,11 @@ msgstr "📚 <b>Mavjud buyruqlar:</b>\n\n/start - Botni ishga tushirish\n/help -
 #: .\bot\handlers\start.py:88
 msgid "🌐 Please select your language:"
 msgstr "🌐 Iltimos, tilingizni tanlang:"
+
+#: bot/keyboards/default/order.py
+msgid "🛍 Order"
+msgstr "🛍 Buyurtma berish"
+
 
 #: .\bot\models\base.py:21
 msgid "city"

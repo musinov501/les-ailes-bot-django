@@ -36,7 +36,7 @@ Hello! Welcome to Les Ailes delivery service.
             reply_markup=await get_language_keyboard()
         )
     else:
-        text = _("Welcome to main menu 😊")
+        text = _("Iltimos, shaharni tanlang:")
         await message.answer(
             text,
             reply_markup=await get_cities_keyboard()
