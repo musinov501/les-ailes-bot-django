@@ -26,6 +26,11 @@ async def city_selection(message: Message, state: FSMContext, selected_city):
         _("Welcome to main menu 😊"),
         reply_markup=await get_user_main_menu(),
     )
+    
+   
+
+
+
 
 
 

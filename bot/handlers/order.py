@@ -10,6 +10,8 @@ from bot.keyboards.default.user import ORDER_BUTTON
 from bot.utils.branch import get_all_branches_by_city
 from bot.utils.city import get_all_cities
 from bot.keyboards.default.branch import branches_keyboard
+from bot.utils.product import get_all_categories
+from bot.utils.branch import get_all_branches_by_city
 
 router = Router()
 
@@ -46,5 +48,7 @@ async def branch_selection_handler(message: Message, state: FSMContext):
     keyboard = await branches_keyboard(branches)
     await message.answer(text, reply_markup=keyboard)
     
+
+
 
 

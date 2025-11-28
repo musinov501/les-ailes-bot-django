@@ -7,3 +7,14 @@ from bot.models.product import Product
 def get_all_products(status=True):
     """Get all products from database"""
     return list(Product.objects.filter(status=status))
+
+
+@sync_to_async
+def get_all_categories(status=True):
+    """Get all category titles that have products with given status"""
+    return list(
+        Product.objects
+        .filter(status=status)
+        .values_list('category__title', flat=True)
+        .distinct()
+    )
